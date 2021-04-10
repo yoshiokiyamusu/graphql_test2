@@ -1,0 +1,53 @@
+https://medium.com/the-dev-caf%C3%A9/build-and-deploy-a-scalable-graphql-api-d912df6b7c28
+
+
+mutation createPodcast{
+  createPodcast(input:{
+    url: "test.net",
+    name: "test"
+  }){
+    id
+    url
+    name
+  }
+}
+
+mutation updatePodcast{
+  updatePodcast(id:"5edcea45058698cfb5636c5b",input:{
+    url: "test.net.com"
+  }){
+    id
+    url
+  }
+}
+
+mutation deletePodcast{
+  deletePodcast(id: "5edcea45058698cfb5636c5b"){
+    id
+  }
+}
+
+query podcasts{
+  podcasts{
+    id
+    name
+    url
+  }
+}
+
+
+
+----------------------------
+
+---DEPLOY HEROKU ---------------------------------------
+git status
+git add .
+git commit -m "commit comment"
+git push graphql_test2 master
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add graphql_test3 https://github.com/yoshiokiyamusu/graphql_test2.git
+git push -u origin main
