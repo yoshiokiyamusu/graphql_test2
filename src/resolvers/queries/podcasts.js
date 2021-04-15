@@ -1,5 +1,7 @@
 module.exports = async (_, {}, {models}) => {
-  return await models.Podcast.find();
+  const podcasts = await models.Podcast.find();
+  return podcasts;
+  //return await models.Podcast.find();
 };
 
 
