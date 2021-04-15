@@ -4,6 +4,6 @@ const {User} = require("./user");
 
 
 module.exports = {
-  Podcast
-  
+  Podcast,
+  User
 }
