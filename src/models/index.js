@@ -1,8 +1,9 @@
 const {Podcast} = require("./podcast");
 
-const {User} = require("./User.js");
+const {User} = require("./user");
 
 
 module.exports = {
-  Podcast, User
+  Podcast,
+  User
 }

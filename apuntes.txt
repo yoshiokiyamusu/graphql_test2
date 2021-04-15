@@ -36,6 +36,15 @@ query podcasts{
 }
 
 
+query{
+  users{
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+
 
 ----------------------------
 
