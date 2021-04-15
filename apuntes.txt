@@ -27,7 +27,7 @@ mutation deletePodcast{
   }
 }
 
-query podcasts{
+query{
   podcasts{
     id
     name
