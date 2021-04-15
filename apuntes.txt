@@ -43,7 +43,7 @@ query podcasts{
 git status
 git add .
 git commit -m "commit comment"
-git push graphql_test2 master
+git push graphql_test3 master
 
 git init
 git add README.md
