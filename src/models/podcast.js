@@ -14,4 +14,19 @@ const podcastSchema = new Schema({
 
 const Podcast = mongoose.model("Podcast", podcastSchema);
 
-module.exports = { Podcast };
+
+
+const userSchema = new Schema({
+    firstname: {
+        type: String,
+        required: true
+    },
+    lastname: String,
+    age: Number
+});
+  
+const User = mongoose.model("User", userSchema);
+  
+
+
+module.exports = { Podcast, User };

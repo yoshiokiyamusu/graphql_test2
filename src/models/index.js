@@ -1,6 +1,6 @@
-const { Podcast } = require("./podcast");
+const { Podcast, User } = require("./podcast");
 
-const { User } = require("./user");
+//const { User } = require("./user");
 
 
 module.exports = {
