@@ -1,6 +1,16 @@
-
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
+
+const podcastSchema = new Schema({
+  name: {
+    type: String,
+    trim: true
+  },
+  url: {
+    type: String,
+    trim: true
+  }
+});
 
 const userSchema = new Schema({
     firstname: {
@@ -11,7 +21,7 @@ const userSchema = new Schema({
     age: Number
 });
   
+const Podcast = mongoose.model("Podcast", podcastSchema);
 const User = mongoose.model("User", userSchema);
   
-module.exports = { User };
-
+module.exports = { Podcast, User };

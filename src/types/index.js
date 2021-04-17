@@ -1,6 +1,6 @@
-const Podcast = require("./Podcast");
+const DataTypes = require("./data_types");
 
 
 module.exports = [
-  Podcast
+  DataTypes
 ]
